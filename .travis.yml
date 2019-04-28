@@ -14,6 +14,7 @@ android:
     - extra-android-m2repository
 
 before_script:
+  - chmod +x gradlew
   # Create and start emulator
   - echo no | android create avd --force -n test -t android-21 --abi armeabi-v7a -c 100M
   - emulator -avd test -no-audio -no-window &
