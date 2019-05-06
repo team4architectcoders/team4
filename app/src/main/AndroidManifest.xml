@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.team4.matrioshkapp">
 
-    <application android:allowBackup="true"
+    <application
+            android:name="com.team4.matrioshkapp.base.di.koin.modules.MatrioshKapp"
+            android:allowBackup="false"
                  android:label="@string/app_name"
                  android:icon="@mipmap/ic_launcher"
                  android:roundIcon="@mipmap/ic_launcher_round"
