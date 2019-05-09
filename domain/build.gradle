@@ -6,6 +6,3 @@ dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation dependenciesDomain.kotlin
 }
-
-sourceCompatibility = "7"
-targetCompatibility = "7"
