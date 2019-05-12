@@ -20,3 +20,12 @@ before_script:
   - emulator -avd test -no-audio -no-window &
   - android-wait-for-emulator
   - adb shell input keyevent 82 &
+
+addons:
+  sonarcloud:
+    organization: "team4architectcoders" # the key of the org you chose at step #3
+    token:
+      secure: "c097e74a6c27c791f7b7d3dfe012c0aef1281fef" # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - sonar-scanner
