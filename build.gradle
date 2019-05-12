@@ -19,11 +19,22 @@ buildscript {
     }
 }
 
+plugins {
+    id "org.sonarqube" version "2.7.1"
+}
+
+sonarqube {
+    properties {
+        property "sonar.projectKey", "[${project.group}:]${project.name}"
+        property "sonar.exclusions", "**/*Generated.java"
+        property "sonar.projectName", "${project.name}"
+    }
+}
+
 allprojects {
     repositories {
         google()
         jcenter()
-        
     }
 }
 
