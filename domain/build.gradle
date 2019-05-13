@@ -1,0 +1,8 @@
+apply plugin: 'kotlin'
+
+apply from: './gradleFiles/dependenciesDomain.gradle'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation dependenciesDomain.kotlin
+}
