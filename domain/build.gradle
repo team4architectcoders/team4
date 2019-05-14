@@ -1,6 +1,7 @@
 apply plugin: 'kotlin'
 
 apply from: './gradleFiles/dependenciesDomain.gradle'
+apply from: './gradleFiles/jacocoDomain.gradle'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
